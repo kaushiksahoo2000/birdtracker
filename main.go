@@ -40,7 +40,7 @@ func NewBirdTrack() *BirdTrack {
 		ID:        GenUUID(),
 		Latitude:  random.Float64() * 90,
 		Longitude: random.Float64()*360 - 180,
-		Speed:     random.Intn(19),
+		Speed:     random.Intn(19), // 19 mph seems to be the max speed for Birds
 	}
 }
 
